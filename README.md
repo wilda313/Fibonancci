@@ -1,9 +1,9 @@
-# Fibonancci
 import java.util.Scanner;
-public class Fibonancci {
+public class no2 {
     public static void main(String[]args) {
-        Scanner show = new Scanner(System.in);
-        System.out.print("Masukan Jumlah Deret Fibonacci ");
+		long x= 0;
+		Scanner show = new Scanner(System.in);
+        System.out.print("Masukan Jumlah Deret Fibonacci = ");
         int n = show.nextInt();
         long fib[] = new long[n];
          
@@ -16,7 +16,9 @@ public class Fibonancci {
          
         for (int i = 0; i < n; i++) {
             System.out.print(fib[i] +  " ");
+			x = x + fib[i];
         }
+		System.out.print("\n Hasil : " + x);
     }
  
 }
